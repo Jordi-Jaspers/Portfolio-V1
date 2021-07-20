@@ -9,8 +9,8 @@ googleAnalytics = "G-MEASUREMENT_ID"
 [params]
   name = "Showfolio Theme"
   description = "Modern portfolio theme for your Hugo site."
-  author = "John Doe"
-  authorEmail = "name@example.com"
+  author = "Jordi Jaspers"
+  authorEmail = "JordiJaspers@gmail.com"
   authorImage = "/photo.png"
   autoDarkMode = true
 
