@@ -1,2 +1,3 @@
-# myPortfolio
-A small side project to create a portfolio website with Hugo, Grav CMS, threejs and tailwind css.
+# Hugo example site for [Pico](https://github.com/negrel/hugo-theme-pico/) theme
+
+See [instructions](https://github.com/negrel/hugo-theme-pico/)
