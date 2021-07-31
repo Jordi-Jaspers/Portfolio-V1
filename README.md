@@ -20,6 +20,7 @@ Grav is a content management system (CMS) that will help to manage the blogs tha
 * Control content management via Grav library
 * Hugo generator experience
 * Some front-end knowledge
+
 ### Improvements
 * ...
 
