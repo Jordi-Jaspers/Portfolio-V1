@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Get smarter about what matters to you. on Jordi Jaspers</title>
-    <link>https://jordijaspers.com/blog/</link>
-    <description>Recent content in Get smarter about what matters to you. on Jordi Jaspers</description>
+    <title>Web-Development on Jordi Jaspers</title>
+    <link>https://jordijaspers.com/tags/web-development/</link>
+    <description>Recent content in Web-Development on Jordi Jaspers</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Jul 2021 17:17:26 +0200</lastBuildDate><atom:link href="https://jordijaspers.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>First Post</title>
-      <link>https://jordijaspers.com/blog/first-post/</link>
-      <pubDate>Sun, 25 Jul 2021 17:17:26 +0200</pubDate>
-      
-      <guid>https://jordijaspers.com/blog/first-post/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://jordijaspers.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proxy Servers</title>
       <link>https://jordijaspers.com/blog/proxies/</link>

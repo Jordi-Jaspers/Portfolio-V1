@@ -8,7 +8,7 @@ weight = 30  # Order that this section will appear.
 # Widget title
 title = "Experience"
 # Widget subtitle
-subtitle = "The experience acquired on the journey."
+subtitle = "“The only source of knowledge is experience.”"
 
 date_format = "Jan 2006" # Date format https://gohugo.io/functions/dateformat/#readout
 

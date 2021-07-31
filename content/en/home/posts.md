@@ -19,7 +19,7 @@ subtitle = "Read my latest blog posts"
 	count = 5
 
 	[content.filters]
-		tag = "recipe"
+		tag = "blogging"
 		category = ""
 		publication_type = ""
 		exclude_featured = false
