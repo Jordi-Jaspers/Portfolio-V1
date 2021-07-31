@@ -17,7 +17,7 @@ date_format = "Jan 2006" # Date format https://gohugo.io/functions/dateformat/#r
   subtitle = "Ilionx - Maastricht, Netherlands"
   date_start = "2021-02-01"
   date_end = ""
-  description = "Chief cook of the biggest restaurant of Bikini Bottom."
+  description = "Building Spring Boot web application as a back-end developer Using Java as main coding language."
 
 [[period]]
   title = "Internship: Electronic Engineer"
@@ -28,10 +28,9 @@ date_format = "Jan 2006" # Date format https://gohugo.io/functions/dateformat/#r
 
 [[period]]
   title = "MSc. Electronic & Software Engineering"
-  subtitle = "KULeuven | UHasselt"
-  location = "Diepenbeek"
+  subtitle = "KULeuven | UHasselt - Diepenbeek, Belgium"
   date_start = "2018-09-01"
   date_end = "2020-08-17"
-  description = "Finished my master's to start my journey as a developer."
+  description = "Finished master in Engineering to commence my journey as a developer."
 
 +++

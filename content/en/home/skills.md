@@ -7,7 +7,7 @@ weight = 20  # Order that this section will appear.
 # hidden = true
 
 title = "Skills"
-subtitle = ""
+subtitle = "“Your skills can be either an asset or a liability.”"
 
 # Coding Skills
 

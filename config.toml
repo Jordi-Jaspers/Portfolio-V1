@@ -31,6 +31,7 @@ customJS = ["js/console.js"]
 description = "Software Engineer"
 email = "JordiJaspers@gmail.com"
 favicon = '/favicon.png'
+pdf = "/documents/Curriculum_Vitae_JORDI_JASPERS.pdf"
 
 [[params.header]]
 night = "/icons/night.svg"
