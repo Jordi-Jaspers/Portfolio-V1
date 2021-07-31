@@ -22,12 +22,12 @@ subtitle = ""
 	percent = "90%"
 
 [[bar_coding]]
-	icon = "/icons/web-development.svg"
-	name = "Web Development"
+	icon = "/icons/python.svg"
+	name = "Python"
 	percent = "85%"
 
 [[bar_coding]]
-	icon = "/icons/css-html.svg"
+	icon = "/icons/web-development.svg"
 	name = "HTML & CSS"
 	percent = "70%"
 

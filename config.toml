@@ -37,7 +37,7 @@ favicon = '/favicon.png'
 # - off
 # - always
 # If commented the theme will use the browser theme.
-darkMode = 'always'
+# darkMode = 'always'
 
 # Social parameters for contact_icons widget
 [[params.social]]
@@ -105,9 +105,6 @@ tabWidth = 2
 [taxonomies]
 category = "categories"
 tag = "tags"
-
-[darkmode]
-isEnabled = true
 
 # Translation
 # English, French and Italian are supported but you can contribute
