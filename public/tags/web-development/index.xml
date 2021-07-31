@@ -6,16 +6,15 @@
     <description>Recent content in Web-Development on Jordi Jaspers</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://jordijaspers.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 17:17:26 +0200</lastBuildDate><atom:link href="https://jordijaspers.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proxy Servers</title>
       <link>https://jordijaspers.com/blog/proxies/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 25 Jul 2021 17:17:26 +0200</pubDate>
       
       <guid>https://jordijaspers.com/blog/proxies/</guid>
-      <description>Ingredients: For 4 people :
- Lots of love 2 cans of crab meat 1 lightly beaten egg 1/2 lemon juice Breadcrumbs 1 tomato Hamburger bread Pickles 1 onion 4 salad leaves Frying oil Salt pepper  For the sauce:
- Worcestershire sauce Ketchup Mustard  Steps :   In a bowl, beat 1 egg then add the crabmeat, breadcrumbs, lemon juice, salt and pepper. Mix until you get a homogeneous consistency.</description>
+      <description>Introduction: Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about proxies which play a vital role in mitigating these risks. We will cover the following topics in this guide:
+  Proxy Server   Forward Proxy Server   Reverse Proxy Server   Summary   Proxy Server Every web request which is sent from the client to a web server goes through some type of proxy server.</description>
     </item>
     
   </channel>
