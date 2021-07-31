@@ -46,8 +46,8 @@
 
 
 
-<link rel="stylesheet" href="https://jordijaspers.com/css/main.min.4aae60ea798d6c1f2947efaff76f6d56.css" crossorigin="anonymous" media="screen"
-	integrity="md5-Sq5g6nmNbB8pR++v929tVg==">
+<link rel="stylesheet" href="https://jordijaspers.com/css/main.min.16ff25d6e9e0af563f1a57430664a2f9.css" crossorigin="anonymous" media="screen"
+	integrity="md5-Fv8l1ungr1Y/GldDBmSi+Q==">
 
 
 
@@ -89,10 +89,10 @@
 
 <header class="w-full flex items-center justify-between px-5 mx-auto md:pt-8 md:max-w-5xl pt-5">
 	
-	<div class="flex items-center">
+	<div class="flex align-center content-center items-center">
 		<a href="https://jordijaspers.com/" class="inline-block font-bold no-underline select-none">
 			<h1 class="hidden md:block font-charter tracking-normal m-0">
-				Jordi Jaspers
+				Jordi Jaspers | 
 			</h1>
 
 			<div class="md:hidden">
@@ -103,15 +103,15 @@
 </div>
 			</div>
 		</a>
+
 		
-		<div class="inline-block pl-2 ml-2 border-l border-gray-600">
-			
-			<a href="https://jordijaspers.com/fr/about/" class="no-underline inline-block px-1">
-				<span class="font-bold">
-					FR
-				</span>
-			</a>
-			
+		<div class="container-icons-outer md:h-8 md:pt-2 md:w-auto" id="dark-mode-btn">
+			<div class="icon-container">
+				<div id="icons" class="flex">
+					<img src="/icons/night.svg" id="night-mode" class="pl-2"></img>
+					<img src="/icons/sun.svg" id="light-mode" class="pl-2"></img>
+				</div>
+			</div>
 		</div>
 		
 	</div>
@@ -179,6 +179,12 @@
 </a>.</p>
 
 </div>
+<div>
+	<ul style="list-style-type:none" >
+		<li> Author:  </li>
+		<li> Published:  </li>
+	</ul>
+</div>
 
 
 
@@ -197,16 +203,16 @@
 		<img src="/icons/email.svg" alt="email icon" class="w-4 h-4 md:w-6 md:h-6 blend-diff">
 	</a>
 	
+	<a href="https://www.linkedin.com/in/jordi-jaspers/" title="LinkedIn"
+		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
+		 target="_blank"   rel="noopener" >
+		<img src="/icons/linkedin.svg" alt="linkedin icon" class="w-4 h-4 md:w-6 md:h-6 blend-diff">
+	</a>
+	
 	<a href="https://github.com/Jordi-Jaspers" title="github"
 		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
 		 target="_blank"   rel="noopener" >
 		<img src="/icons/github.svg" alt="github icon" class="w-4 h-4 md:w-6 md:h-6 blend-diff">
-	</a>
-	
-	<a href="https://medium.com/" title="medium"
-		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
-		 target="_blank"   rel="noopener" >
-		<img src="/icons/medium.svg" alt="medium icon" class="w-4 h-4 md:w-6 md:h-6 blend-diff">
 	</a>
 	
 	<a href="https://stackoverflow.com/users/15013016/jjaspers" title="stack-overflow"
@@ -239,9 +245,9 @@
 
 		<div class="h-full flex-1">
 			<span class="select-none">
-				<a href="https://github.com/negrel/hugo-theme-pico" class="text-gray-400 hover:text-gray-200 no-underline">Pico</a>
-				theme for
-				<a href="https://gohugo.io/" class="text-gray-400 hover:text-gray-200 no-underline">Hugo</a>
+				<ul class="copyright" style="list-style-type:none;">
+					<li>&copy; Jordi Jaspers. All rights reserved.</li>
+				</ul>
 			</span>
 		</div>
 	</div>
@@ -251,3 +257,77 @@
 </body>
 
 </html>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy8mnfMHLTs3iLlfwYoMzhAgJZL-HQTiM&callback=initMap" async defer></script>
+
+<script>
+	let darkMode = localStorage.getItem('darkMode')
+	let darkBtn = document.getElementById("night-mode")
+	let lightBtn = document.getElementById("light-mode")
+
+	function initMap() {
+		let darkMode = localStorage.getItem('darkMode')
+		var location = {lat: 50.851368, lng: 5.690973};
+
+		var id = '9b9ec466401295ad';
+		if (darkMode === "on") {
+			id = 'd492f7b85b90bc1a';
+		}
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 12,
+			center: location,
+			mapId: id
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map,
+		});
+	}
+
+	darkBtn.addEventListener('click', () => {
+		setLightMode()
+		initMap()
+	})
+
+	lightBtn.addEventListener('click', () => {
+		setDarkMode()
+		initMap()
+	})
+
+	
+	if (darkMode == null) {
+		localStorage.setItem('darkMode', 'on');
+		document.documentElement.classList.add('dark')
+		document.getElementById("light-mode").style = "visibility:hidden";
+		document.getElementById("night-mode").style = "visibility:visible";
+	} else {
+		setInitialDarkMode(darkMode);
+	}
+
+	function setInitialDarkMode(darkMode) {
+		if (darkMode == 'on') {
+			setDarkMode()
+		}
+		else {
+			setLightMode()
+		}
+	}
+
+	function setDarkMode() {
+		console.log("Turning dark mode 'On'");
+		localStorage.setItem('darkMode', 'on');
+	
+		document.documentElement.classList.add('dark');
+		document.getElementById("light-mode").style = "visibility:hidden";
+		document.getElementById("night-mode").style = "visibility:visible";
+	}
+
+	function setLightMode() {
+		console.log("Turning dark mode 'Off'");
+		localStorage.setItem('darkMode', 'off');
+	
+		document.documentElement.classList.remove('dark');
+		document.getElementById("light-mode").style = "visibility:visible";
+		document.getElementById("night-mode").style = "visibility:hidden";
+	}
+</script>

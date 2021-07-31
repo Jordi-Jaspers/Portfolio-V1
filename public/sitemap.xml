@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://jordijaspers.com/en/sitemap.xml</loc>
-    
-      <lastmod>2020-06-25T00:00:00+02:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://jordijaspers.com/fr/sitemap.xml</loc>
-    
-      <lastmod>2020-06-25T00:00:00+02:00</lastmod>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jordijaspers.com/tags/blogging/</loc>
+    <lastmod>2021-07-25T17:17:26+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/blog/first-post/</loc>
+    <lastmod>2021-07-25T17:17:26+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/blog/</loc>
+    <lastmod>2021-07-25T17:17:26+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/</loc>
+    <lastmod>2021-07-25T17:17:26+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/tags/</loc>
+    <lastmod>2021-07-25T17:17:26+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/blog/krabby_patty/</loc>
+    <lastmod>2020-06-25T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/tags/recipe/</loc>
+    <lastmod>2020-06-25T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://jordijaspers.com/about/</loc>
+  </url><url>
+    <loc>https://jordijaspers.com/categories/</loc>
+  </url>
+</urlset>
