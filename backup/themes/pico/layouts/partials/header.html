@@ -1,0 +1,36 @@
+{{ $page := . }}
+
+<header class="w-full flex items-center justify-between px-5 mx-auto md:pt-8 md:max-w-5xl pt-5">
+	{{/* Pico responsive icon (square and text) */}}
+	<div class="flex align-center content-center items-center">
+		<a href="{{ .Site.Home.Permalink }}" class="inline-block font-bold no-underline select-none">
+			<h1 class="hidden md:block font-charter tracking-normal m-0">
+				{{ .Site.Title }} | 
+			</h1>
+
+			<div class="md:hidden">
+				{{ partial "icon" . }}
+			</div>
+		</a>
+
+		{{ range .Site.Params.header }}
+		<div class="container-icons-outer md:h-8 md:pt-2 md:w-auto" id="dark-mode-btn">
+			<div class="icon-container">
+				<div id="icons" class="flex">
+					<img src="{{ .night | relURL }}" id="night-mode" class="pl-2"></img>
+					<img src="{{ .sun | relURL }}" id="light-mode" class="pl-2"></img>
+				</div>
+			</div>
+		</div>
+		{{ end }}
+	</div>
+
+	<nav class="">
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL | relLangURL}}"
+			class='mx-1 md:mx-2 hover:text-primary-light dark:hover:text-primary-dark no-underline'>
+			{{ .Pre }} {{ i18n .Identifier }}
+		</a>
+		{{ end }}
+	</nav>
+</header>

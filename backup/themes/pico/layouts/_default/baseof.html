@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}' class='{{ if eq .Site.Params.darkmode "always" }} dark {{ end }}'>
+
+<head>
+	{{ partial "head/metadata.html" . }}
+	{{ partial "head/js.html" . }}
+	{{ partial "head/css.html" . }}
+</head>
+
+<body class="min-h-screen bg-secondary-light dark:bg-secondary text-primary relative pb-24">
+	{{/* class dark to prevent purge css from purging it */}}
+	<div id="top" class="dark"></div>
+
+	{{- partial "header.html" . -}}
+
+	{{ $mainClass := "" }}
+	{{ if .IsHome }}
+	{{ $mainClass = "lg:max-w-5xl xl:max-w-6xl 2xl:max-w-screen-xl" }}
+	{{ end }}
+
+	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl overflow-x-hidden md:overflow-visible {{ $mainClass }}">
+		{{- block "main" . }}{{- end }}
+	</main>
+
+	<div class="absolute bottom-0 w-full">
+		{{- partial "footer.html" . -}}
+		{{/* {{- partial "dev/parameters.html" . -}} */}}
+	</div>
+</body>
+
+</html>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy8mnfMHLTs3iLlfwYoMzhAgJZL-HQTiM&callback=initMap" async defer></script>
+
+<script>
+	let darkMode = localStorage.getItem('darkMode')
+	let darkBtn = document.getElementById("night-mode")
+	let lightBtn = document.getElementById("light-mode")
+
+	function initMap() {
+		let darkMode = localStorage.getItem('darkMode')
+		var location = {lat: 50.851368, lng: 5.690973};
+
+		var id = '9b9ec466401295ad';
+		if (darkMode === "on") {
+			id = 'd492f7b85b90bc1a';
+		}
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 12,
+			center: location,
+			mapId: id
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map,
+		});
+	}
+
+	darkBtn.addEventListener('click', () => {
+		setLightMode()
+		initMap()
+	})
+
+	lightBtn.addEventListener('click', () => {
+		setDarkMode()
+		initMap()
+	})
+
+	// Setting the Darkmode property to the local storage.
+	if (darkMode == null) {
+		localStorage.setItem('darkMode', 'on');
+		document.documentElement.classList.add('dark')
+		document.getElementById("light-mode").style = "visibility:hidden";
+		document.getElementById("night-mode").style = "visibility:visible";
+	} else {
+		setInitialDarkMode(darkMode);
+	}
+
+	function setInitialDarkMode(darkMode) {
+		if (darkMode == 'on') {
+			setDarkMode()
+		}
+		else {
+			setLightMode()
+		}
+	}
+
+	function setDarkMode() {
+		console.log("Turning dark mode 'On'");
+		localStorage.setItem('darkMode', 'on');
+	
+		document.documentElement.classList.add('dark');
+		document.getElementById("light-mode").style = "visibility:hidden";
+		document.getElementById("night-mode").style = "visibility:visible";
+	}
+
+	function setLightMode() {
+		console.log("Turning dark mode 'Off'");
+		localStorage.setItem('darkMode', 'off');
+	
+		document.documentElement.classList.remove('dark');
+		document.getElementById("light-mode").style = "visibility:visible";
+		document.getElementById("night-mode").style = "visibility:hidden";
+	}
+</script>
