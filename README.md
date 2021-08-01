@@ -21,8 +21,11 @@ Grav is a content management system (CMS) that will help to manage the blogs tha
 * Hugo generator experience
 * Some front-end knowledge
 
-### Improvements
-* ...
+### TODO
+* Different layout for Skills section.
+* Add some CSS projects as referals with github referals.
+* Add blog posts.
+* Find a good design for about me page.
 
 ### References
 
