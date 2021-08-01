@@ -16,19 +16,12 @@ banner = 'img/Proxy-Server.webp'
 +++
 
 ## Introduction:
-Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which play a vital role in mitigating these risks. We will cover the following topics in this guide:
-
-* [Proxy Server](blog/proxies#Proxy-Server)
-* [Forward Proxy Server](blog/proxies#Forward-Proxy-Server)
-* [Reverse Proxy Server](blog/proxies#Reverse-Proxy-Server)
-* [Summary](blog/proxies#Summary)
-
-
+Internet has connected people across the world using social media and audio/video calling features along with providing an overabundance of knowledge and tools. All this comes with an inherent danger of security and privacy breaches. In this guide we will talk about **proxies** which play a vital role in mitigating these risks. 
 # Proxy Server
 **Every web request which is sent from the client to a web server goes through some type of proxy server. A proxy server acts as a gateway between client (you) and the internet and separates end-users from the websites you browse.** It replaces the source IP address of the web request with the proxy server's IP address and then forwards it to the web server. The web server is unaware of the client, it only sees the proxy server.  
   
 
-  
+
 ![Fig 1.1: Proxy Server](img/blog/proxies/proxy-example.png)
 
 **_NOTE:_**  **This is not an accurate description rather just an illustration.**

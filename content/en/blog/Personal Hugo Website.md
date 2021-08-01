@@ -19,10 +19,6 @@ banner = 'img/hugo_github.png'
 A personal webpage is a perfect place to let the world know about you and showcase your past accomplishments. Put your resume, your projects, your blogs in with a personalized theme which makes people know you have a great taste: all-in-one! It’s your portfolio displayed online, a small yet cool project you can do with not much effort, why not?  
   
 With Github Pages, we can host a personal webpage without bothering about finding a domain name, and with Hugo, we have a variety of themes to choose from. This tutorial uses a Mac OS and will run several command-line in terminal: don’t worry, it’s absolutely a tutorial for starters! Now, let’s start this step-by-step tutorial to set up your personal webpage!  
-  
-* [Building The Site Locally](blog/personal-hugo-website/#Building-The-Site-Locally)
-* [Deploy To Github Pages](blog/personal-hugo-website/#Deploy-To-Github-Pages)
-  
 ## HUGO
 Hugo is one of the most popular open-source static site generators and is written in GO. It’s simple, efficient, easy to scale and fast to deploy. Simply install with brew, clone themes you like from Github or the official website [HUGO](https://gohugo.io/), make some changes in the configuration file and deploy, then your page will be online.
   
