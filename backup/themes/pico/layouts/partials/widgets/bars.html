@@ -12,7 +12,7 @@
 			<h2 class="flex" style="justify-content: center; padding-top: 2em;">
 			Coding Skills
 		</h2>
-			{{ range .Params.bar_coding }}
+			{{ range .Params.bar_coding_skills }}
 			<div class="mt-8">
 				{{ if .icon }}
 				<img class="mx-auto h-32" src="{{ .icon | relURL }}" alt="{{ .name }} icon">
@@ -32,9 +32,9 @@
 
 		<div class="w-full flex flex-col">
 			<h2 class="flex" style="justify-content: center; padding-top: 2em;">
-				Soft Skills
+				Coding Languages
 			</h2>
-			{{ range .Params.bar_teamskills }}
+			{{ range .Params.bar_coding_languages }}
 			<div class="mt-8">
 				{{ if .icon }}
 				<img class="mx-auto h-32" src="{{ .icon | relURL }}" alt="{{ .name }} icon">

@@ -11,41 +11,41 @@ subtitle = "“Your skills can be either an asset or a liability.”"
 
 # Coding Skills
 
-[[bar_coding]]
-	icon = "/icons/java-programming-language.svg"
-	name = "Java"
+[[bar_coding_skills]]
+	icon = "/icons/github-skill.svg"
+	name = "Version Control"
 	percent = "95%"
 
-[[bar_coding]]
+[[bar_coding_skills]]
 	icon = "/icons/database-server.svg"
 	name = "Database Management"
 	percent = "90%"
 
-[[bar_coding]]
+[[bar_coding_skills]]
+	icon = "/icons/jenkins.svg"
+	name = "Continuous Integration / Deployment"
+	percent = "80%"
+
+# Coding Languages
+
+[[bar_coding_languages]]
+	icon = "/icons/java-programming-language.svg"
+	name = "Java"
+	percent = "95%"
+
+[[bar_coding_languages]]
 	icon = "/icons/python.svg"
 	name = "Python"
 	percent = "85%"
 
-[[bar_coding]]
+[[bar_coding_languages]]
 	icon = "/icons/web-development.svg"
 	name = "HTML & CSS"
 	percent = "70%"
 
-# Soft Skills
-
-[[bar_teamskills]]
-	icon = "/icons/communication.svg"
-	name = "Communication"
-	percent = "90%"
-
-[[bar_teamskills]]
-	icon = "/icons/teamwork.svg"
-	name = "Teamwork"
-	percent = "90%"
-
-[[bar_teamskills]]
-	icon = "/icons/problem-solving.svg"
-	name = "Problem-Solving"
-	percent = "80%"
+[[bar_coding_languages]]
+	icon = "/icons/go.svg"
+	name = "Golang"
+	percent = "70%"
 
 +++
